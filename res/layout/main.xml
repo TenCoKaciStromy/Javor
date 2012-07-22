@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent"
+    a:orientation="vertical" >
+	<LinearLayout a:id="@+id/pnlMainToolBar"
+		a:layout_width="fill_parent"
+		a:layout_height="wrap_content">
+	</LinearLayout>
+	<LinearLayout a:id="@+id/pnlContentAndLog"
+		a:layout_width="fill_parent"
+		a:layout_height="fill_parent"
+		a:orientation="vertical">
+	<LinearLayout a:id="@+id/pnlMainSpliter"
+		a:layout_weight="1"
+		a:layout_width="match_parent"
+		a:layout_height="match_parent"
+		a:orientation="horizontal">
+	
+		<LinearLayout a:id="@+id/pnlMainLeft"
+			a:layout_weight="1"
+			a:layout_height="fill_parent"
+			a:layout_width="fill_parent"
+			a:orientation="vertical">
+    		<TextView
+        		a:layout_width="fill_parent"
+        		a:layout_height="wrap_content"
+    	    	a:text="@string/hello" />
+			<com.tcks.javor.ReflectionFieldsFilterControl
+				a:id="@+id/filterFields"
+				a:layout_width="fill_parent"
+				a:layout_height="wrap_content"
+				/>
+			<ListView a:id="@+id/lstTypes"
+				a:layout_width="fill_parent"
+				a:layout_height="fill_parent"/>
+		</LinearLayout>
+		<LinearLayout a:layout_weight="1" a:layout_height="fill_parent" a:layout_width="fill_parent">
+			<EditText a:id="@+id/txtSqlEdit"
+				a:layout_width="fill_parent"
+				a:layout_height="fill_parent"
+				a:textCursorDrawable="@null"/>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout a:id="@+id/pnlTrace"
+		a:layout_weight="1"
+		a:layout_width="fill_parent"
+		a:layout_height="fill_parent"
+		a:orientation="vertical">
+		<View a:background="#ffffff" a:layout_width="fill_parent" a:layout_height="1dip"/>
+		<TextView a:id="@+id/txtTrace"
+			a:layout_width="fill_parent"
+			a:layout_height="fill_parent"
+			a:text="@string/hello"/>
+	</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
